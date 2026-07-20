@@ -39,7 +39,7 @@ export const RINGS: Record<RingKey, RingProduct> = {
     nameEn: "Node",
     description:
       "서로 다른 시간과 기억이 쌓여 만들어진 관계를 상징하며, 빛을 받을 때마다 구조적인 리듬감과 단단한 인상을 전함.",
-    imageSrc: "/images/node.svg",
+    imageSrc: "/images/node.jpg",
     productUrl: "https://www.athosoo.com/33/?idx=43",
   },
   segment: {
@@ -48,7 +48,7 @@ export const RINGS: Record<RingKey, RingProduct> = {
     nameEn: "Segment",
     description:
       "분리된 선과 면은 각자의 형태를 지니면서도 자연스럽게 맞물려 조화를 이루고, 그 안에서 단단하지만 부드러운 균형을 만들어냄.",
-    imageSrc: "/images/segment.svg",
+    imageSrc: "/images/segment.jpg",
     productUrl: "https://www.athosoo.com/33/?idx=42",
   },
   haze: {
@@ -57,7 +57,7 @@ export const RINGS: Record<RingKey, RingProduct> = {
     nameEn: "Haze",
     description:
       "아지랑이처럼 미세한 결들이 주는 질감과 잡힐 듯 말 듯한 섬세한 감정을 담아내며, 은은하고 깊은 인상을 전함.",
-    imageSrc: "/images/haze.svg",
+    imageSrc: "/images/haze.jpg",
     productUrl: "https://www.athosoo.com/33/?idx=41",
   },
   pier: {
