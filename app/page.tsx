@@ -240,7 +240,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
   return (
     <div className="max-w-lg text-center animate-fadeUp">
       <p className="text-xs tracking-[0.3em] text-[var(--muted)] mb-6">
-        ATELIER HOSU
+        ATELIER HOSOO
       </p>
       <h1 className="font-serifkr text-3xl md:text-4xl leading-relaxed mb-6">
         새벽 호수처럼,
