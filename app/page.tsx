@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { BRANCHES, STYLE_OPTIONS, RingProduct } from "@/lib/data";
-
+ 
 type Calendar = "solar" | "lunar";
 
 interface FormState {
@@ -168,7 +168,10 @@ export default function Home() {
 
       {step === 3 && (
         <QuestionCard title="방문하고 싶은 지점을 선택해주세요">
-          <div className="flex flex-col gap-3">
+          <div
+            className="flex flex-col gap-3 overflow-y-auto pr-1"
+            style={{ maxHeight: "360px" }}
+          >
             {BRANCHES.map((b) => (
               <button
                 key={b.key}
