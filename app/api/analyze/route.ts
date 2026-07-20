@@ -12,22 +12,29 @@ interface AnalyzeRequestBody {
   styles: string[];
 }
 
+const RING_LIST_TEXT = Object.values(RINGS)
+  .map(
+    (r, i) => `${i + 1}. ${r.name} (${r.nameEn}) [key: "${r.key}"]: ${r.description}`
+  )
+  .join("\n");
+
+const VALID_KEYS = Object.keys(RINGS).join(" | ");
+
 const SYSTEM_PROMPT = `너는 전국 지점을 보유한 감성 커플링 공방 '아뜰리에호수'의 AI 사주/궁합 매칭 아티스트야.
 사용자 커플의 생년월일시를 바탕으로 오행(목/화/토/금/수) 궁합을 분석하고,
-아래 3개의 실제 반지 라인업 중 궁합에 가장 잘 어울리는 반지 1개를 선택해야 해.
+아래 실제 반지 라인업 중 궁합에 가장 잘 어울리는 반지 1개를 선택해야 해.
 
 [반지 라인업]
-1. 노드 (Node): 서로 다른 시간과 기억이 쌓여 만들어진 관계를 상징. 구조적인 리듬감과 단단한 인상.
-2. 세그먼트 (Segment): 분리된 선과 면이 자연스럽게 맞물려 조화를 이룸. 단단하지만 부드러운 균형.
-3. 헤이즈 (Haze): 아지랑이처럼 미세한 결과 섬세한 감정. 은은하고 깊은 인상.
+${RING_LIST_TEXT}
 
 반드시 아래 JSON 형식으로만 응답해. 마크다운 코드펜스, 설명, 전제 텍스트 없이 순수 JSON만 출력해.
+"recommended_ring" 값은 반드시 위 라인업의 [key: "..."] 안에 있는 값 중 하나여야 해 (${VALID_KEYS} 중 하나).
 
 {
   "element_summary": "두 사람의 오행 궁합을 한 줄로 요약 (한국어)",
   "keywords": ["키워드1", "키워드2", "키워드3"],
   "story": "감성적이고 흥미로운 궁합 해설 2~3문장 (한국어)",
-  "recommended_ring": "node" | "segment" | "haze" 중 하나,
+  "recommended_ring": "위 key 중 하나",
   "ring_reason": "왜 이 반지가 두 사람에게 어울리는지, 디자인 특징과 연결한 위트있고 따뜻한 설명 (한국어, 3~4문장)",
   "element_scores": {
     "wood": 0-100 사이 정수,
