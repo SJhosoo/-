@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0b0f14;
+  --panel: #131a22;
+  --panel-line: rgba(199, 205, 211, 0.14);
+  --silver: #c7cdd3;
+  --moon: #edeff2;
+  --muted: #7c8794;
+
+  --wood: #6b8f71;
+  --fire: #b5623b;
+  --earth: #c9a66b;
+  --metal: #b8c4cc;
+  --water: #4c6b87;
+}
+
+html,
+body {
+  background-color: var(--ink);
+  color: var(--moon);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--silver);
+  outline-offset: 3px;
+}
+
+.hairline {
+  border-color: var(--panel-line);
+}
