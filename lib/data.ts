@@ -237,7 +237,7 @@ export interface Branch {
 }
 
 export const BRANCHES: Branch[] = [
-  { key: "jamsil", name: "아뜰리에호수 잠실점", reservationUrl: "https://naver.me/FHlgAjpk" },
+  { key: "jamsil", name: "아뜰리에호수 잠실점", reservationUrl: "https://naver.me/Fmf6pwmz" },
   { key: "hongdae", name: "아뜰리에호수 홍대점", reservationUrl: "https://naver.me/FdCxo0jb" },
   { key: "hyehwa", name: "아뜰리에호수 혜화점", reservationUrl: "https://naver.me/FHlgAjpk" },
   { key: "seongsu", name: "아뜰리에호수 성수점", reservationUrl: "https://naver.me/xGIP5g0e" },
