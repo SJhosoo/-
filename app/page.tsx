@@ -243,14 +243,12 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
         ATELIER HOSOO
       </p>
       <h1 className="font-serifkr text-3xl md:text-4xl leading-relaxed mb-6">
-        두 사람의 생년월일에 숨겨진 운명의 기운을 읽어드립니다.
+        우리는 어떤 기운으로
         <br />
-        서로의 온도를 채워줄 아뜰리에호수만의 단 하나뿐인 반지를 만나보세요.
+        서로를 끌어당기고 있을까요?
       </h1>
       <p className="text-[var(--muted)] text-sm leading-relaxed mb-10">
-        우리는 어떤 기운으로 서로를 끌어당기고 있을까요?
-        <br />
-        두 사람의 궁합 사주로 완성하는 세상에 단 하나뿐인 커플링 매칭.
+        궁합 사주로 찾아드리는 아뜰리에호수 맞춤 커플링.
       </p>
       <button
         onClick={onStart}
