@@ -57,7 +57,7 @@ export const RINGS: Record<RingKey, RingProduct> = {
     nameEn: "Haze",
     description:
       "아지랑이처럼 미세한 결들이 주는 질감과 잡힐 듯 말 듯한 섬세한 감정을 담아내며, 은은하고 깊은 인상을 전함.",
-    imageSrc: "/public/images/haze.jpg",
+    imageSrc: "/images/haze.jpg",
     productUrl: "https://www.athosoo.com/33/?idx=41",
   },
   pier: {
