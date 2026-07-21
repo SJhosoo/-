@@ -240,17 +240,15 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
   return (
     <div className="max-w-lg text-center animate-fadeUp">
       <p className="text-xs tracking-[0.3em] text-[var(--muted)] mb-6">
-        ATELIER HOSU
+        ATELIER HOSOO
       </p>
       <h1 className="font-serifkr text-3xl md:text-4xl leading-relaxed mb-6">
-        새벽 호수처럼,
+        우리는 어떤 기운으로
         <br />
-        두 사람의 기운을 읽습니다
+        서로를 끌어당기고 있을까요?
       </h1>
       <p className="text-[var(--muted)] text-sm leading-relaxed mb-10">
-        생년월일시로 오행 궁합을 살펴보고,
-        <br />
-        두 분에게 어울리는 커플링을 찾아드려요.
+        궁합 사주로 찾아드리는 아뜰리에호수 맞춤 커플링💍
       </p>
       <button
         onClick={onStart}
