@@ -130,13 +130,13 @@ export default function Home() {
               label="첫 번째 분"
               value={form.name1}
               onChange={(v) => setForm((p) => ({ ...p, name1: v }))}
-              placeholder="예: 김유리"
+              placeholder=""
             />
             <TextField
               label="두 번째 분"
               value={form.name2}
               onChange={(v) => setForm((p) => ({ ...p, name2: v }))}
-              placeholder="예: 조민지"
+              placeholder=""
             />
           </div>
           <NavButtons onNext={() => setStep(2)} disabled={!canProceed()} />
