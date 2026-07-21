@@ -248,7 +248,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
         서로를 끌어당기고 있을까요?
       </h1>
       <p className="text-[var(--muted)] text-sm leading-relaxed mb-10">
-        궁합 사주로 찾아드리는 아뜰리에호수 맞춤 커플링💍
+        궁합 사주로 찾아드리는 아뜰리에호수 맞춤 커플링 💍
       </p>
       <button
         onClick={onStart}
